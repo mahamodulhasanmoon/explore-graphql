@@ -1,0 +1,64 @@
+graphql is a query language 
+
+its not any database it is a programming language to get data 
+
+graphql is make a layer between  frontend and backend
+
+
+and client who use the query languages to use get data from the api
+
+graphql is existing between frontend and backend
+
+in ql word you have to remembered that it is a database like sql but it is not a database. but it is a query api not a database
+
+
+graphql is maintained 2 type of request 
+
+1 query
+2 mutation
+
+
+when we fetch data it called query and other requested are mutations
+
+query is like as a get request
+
+
+mutations is different and weard . provably a coneept as like as hand link data and its related to changees in data its like as post , put and delete requests.
+
+
+but when you use graphql you dont need to thing about the process of request and as a confused there was a leyer between frontend and backend
+
+
+there is two way usigng graphql when it developed  it be a complete different service in frontend and backend make a request trough backend service or it can exits as a backend service
+
+
+but if yous fronted you naver make a request end poient like backend because it is always comunicate with graphql 
+
+
+
+
+different between graphql and only api
+
+REST API :
+
+one end point 
+overfetching and underfetching 
+
+
+
+graphql :
+
+single endpoint
+
+
+
+
+
+
+
+
+
+
+
+
+
