@@ -1,0 +1,26 @@
+there is 5 types of data in graphql 
+
+1. ID
+2. String
+3.Float
+4.int
+5. Boolean
+
+// for the queryis you need to define type of your data as like as 
+
+type User {
+  id : ID,
+  name: string,
+  age: Int,
+  height : Float,
+  isMarried: Boolean,
+}
+
+its very very strictly type 
+
+if you need to require this data you need to use ! mark but it optional you can remove this sign
+
+
+// every graphql api need to a scema 
+it is not connected to database
+
