@@ -1,11 +1,19 @@
-const { UserList } = require("../fakeData/fakeData");
+const { UserList } = require("../fakeData");
+const _ = require('lodash')
 
 
 const resolvers = {
     Query : {
-        users(){
+        users: () =>{
 
             return UserList
+        },
+        user: (parent, args)=>{
+
+          const id =   args.id
+
+          const user = _.find(UserList, {id : Number(id)})
+          return user
         }
     }
 }
