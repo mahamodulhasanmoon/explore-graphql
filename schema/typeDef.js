@@ -9,6 +9,7 @@ username: String!
 age: Int!
 nationality: Nationality
 friends: [User!]
+favoriteMovies: [Movie]
 
 
 }
@@ -27,7 +28,7 @@ type Query {
     movies: [Movie!]!
  movie(name : String!): Movie!
    
-   
+
 
 }
 

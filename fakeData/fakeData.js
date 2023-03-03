@@ -43,6 +43,15 @@ const UserList = [
           age: 20,
           nationality: "BRAZIL",
         },
+
+      ],
+      favouriteMovie: [
+        {
+          id: 4,
+          name: "PedroTech The Movie",
+          yearOfPublication: 2035,
+          isInTheaters: false,
+        },
       ],
     },
     {

@@ -15,6 +15,7 @@ const resolvers = {
           const user = _.find(UserList, {id : Number(id)})
           return user
         },
+
         movies : ()=>{
             return MovieList
         },
@@ -25,7 +26,17 @@ const resolvers = {
             return movie
         },
 
-    }
+    },
+    User: {
+        favoriteMovies: () => {
+          return _.filter(
+            MovieList,
+            (movie) =>
+              movie.yearOfPublication >= 2000 && movie.yearOfPublication <= 2010
+          );
+        },
+      },
+
 }
 
 module.exports = resolvers;
