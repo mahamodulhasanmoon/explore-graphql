@@ -22,6 +22,7 @@ const resolvers = {
 
         movie : (parent, args)=>{
             const name = args.name
+        
             const movie = _.find(MovieList, {name })
             return movie
         },
@@ -29,6 +30,7 @@ const resolvers = {
     },
     User: {
         favoriteMovies: () => {
+           
           return _.filter(
             MovieList,
             (movie) =>
