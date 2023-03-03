@@ -20,8 +20,8 @@ const resolvers = {
         },
 
         movie : (parent, args)=>{
-            const id = args.id
-            const movie = _.find(MovieList, {id : Number(id)})
+            const name = args.name
+            const movie = _.find(MovieList, {name })
             return movie
         },
 
