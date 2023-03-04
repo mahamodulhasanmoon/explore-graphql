@@ -48,7 +48,23 @@ const resolvers = {
        user.id = lastId+1
        UserList.push(user)
        return user
-      }
+      },
+     updateUserName:(parent,args)=>{
+      const { id, updateUserName } = args.input;
+    
+      let userUpdated;
+      
+      UserList.forEach(user=> {
+        
+        if(user.id == id){
+          user.username = updateUserName;
+          userUpdated = user;
+
+        }
+      })
+    
+return userUpdated;
+     }
 
     }
 

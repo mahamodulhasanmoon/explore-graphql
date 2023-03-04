@@ -39,8 +39,14 @@ input CreateUserInput {
     nationality: Nationality = BRAZIL
   }
 
+  input UpdateUserInput {
+  id: ID!
+  updateUserName: String!
+  }
+
 type Mutation{
-    createUser(input: CreateUserInput!): User
+    createUser(input: UpdateUserInput!): User
+    updateUserName(input : UpdateUserInput!): User
 }
 
 
