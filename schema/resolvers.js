@@ -64,7 +64,13 @@ const resolvers = {
       })
     
 return userUpdated;
-     }
+     },
+     
+     deleteUser: (parent, args) => {
+      const id = args.id;
+      _.remove(UserList, (user) => user.id === Number(id));
+      return null;
+    },
 
     }
 
